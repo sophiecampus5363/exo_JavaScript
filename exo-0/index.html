@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <h1>Exercice 0</h1>
+
+    <script type="text/javascript">
+        /* Section 1 */
+
+        var name = "Joe"; //Je déclare une variable nommée name qui prend pour valeur la chaîne de caractères Joe.
+        var city = 'London'; //Je déclare une variable city name qui prend pour valeur la chaîne de caractère London.
+        var age = 32; //Je déclare une variable nommée age qui prend pour valeur l'entier 32.
+        var isRed = true; //Je déclare une variable nommée isRed qui prend pour valeur le booléen true.
+        var isOld = age > 80; //Je déclare une variable nommée isOld qui prend pour valeur la valeur de la variable âge si elle est supérieure à 80.
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; //Je déclare un tableau nommé previousJobs qui prend pour valeurs 'lawyer', 'developper', 'Professionnal climber'.
+
+        function info(height, weight) { //Je déclare une fonction nommée info et prenant en paramètres height et weight
+            if (height > 180) { //Je crée une condition, si la valeur de height est supérieure à 180
+                console.log('Vous êtes grand'); //J'affiche dans la console "Vous êtes grand"
+            } //Je ferme le bloc de code de ma condition
+            if (weight < 0) { //Je crée une autre condition, si la valeur de weight est inférieure à 0
+                console.log('oups, there is a problem'); // J'affiche dans la console "Oups, there is a problem"
+            } else if (weight < 15) { //Je déclare une autre condition, si la valeur de weight est inférieure à 15, 
+                console.log('Are you that slim ?') //J'affiche dans la console "Are you slim?"
+            } else { //Je déclare un cas par défaut, si aucun des précédents n'est vrai
+                console.log('Good !') //J'affiche alors "good!"
+            }
+        }
+
+        info(165, 45); //J'appelle la function info et je lui passe les paramètres 165 et 45 
+
+        var myHeight = 175; //Je déclare une variable nommée myHeight et je lui assigne la valeur 175
+        var myWeight = 86;//Je déclare une variable nommée myWeight et je lui assigne la valeur 86
+
+        info(myHeight, myWeight); //J'appelle la fonction info et je lui passe en paramètres la valeur de myHeight et myWeight 
+
+        info(myHeight + 15, myWeight - 100); //Je concatène les paramètres de ma fonction info, ajoutant 15 à la valeur de myHeight et en soustrayant 100 à la valeur de  myWeight
+
+        function toUpper(variable) { //Je déclare une fonction nommée toUpper qui prend en paramètre une variable nommée variable
+            return variable.toUpperCase(); //Dans le bloc de cette fonction je retourne la valeur de variable que je passe en majuscule à l'aide de la méthode toUpperCase
+        }
+
+        var upperName = toUpper(name); //Je déclare une variable nommée upperName et lui assigne la valeur de la fonction toUpper
+
+        for (i = 0; i < 3; i = i + 1) { //Je déclare une boucle for dont les 
+            console.log(previousJobs[i]); // J'affiche dans la console le tableau previousJobs
+        }
+
+        /* Section 2: */
+
+      
+
+      
+
+        /* Section 3 */
+
+        //console.log(myVariable);
+    </script>
+
+</body>
+
+</html>
